@@ -1,2 +1,2 @@
-# responsive-website-fcc
-Few Project from freeCodeCamp Responsive website course
+# Responsive Ewebsites freeCodeCamp
+Few Project from freeCodeCamp Responsive website course.
