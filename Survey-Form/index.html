@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - &lt;freeCodeCamp&gt; Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Survey Title -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <!-- Survey Description -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <!-- Survey Form -->
+    <form action="https://register-demo.freecodecamp.org" id="survey-form">
+
+      <!-- FS(Name, Email, Age, Current role, Recommend) -->
+      <fieldset>
+
+        <!-- Name -->
+        <label id="name-label" for="name">Name
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" required />
+        </label>
+
+        <!-- Email -->
+        <label id="email-label" for="email">Email
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+        </label>
+
+        <!-- Age -->
+        <label id="number-label" for="age">Age
+          <input type="number" name="age" id="number" min="13" max="120" placeholder="Enter Your Age" />
+        </label>
+
+        <!-- Current Option -->
+        <div class="dropdown-control">
+          <p>Which option best describes your current role? </p>
+          <select id="dropdown" name="current-role">
+            <option value="" disabled selected value>Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="dont-sat">Prefer not to say</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <!-- Recommend -->
+        <p>Would you recommend freeCodeCamp to a friend?
+        <p>
+          <label for="definitely"><input id="definitely" type="radio" name="recommend" value="Definitely" /> Definitely</label>
+          <label for="maybe"><input id="maybe" type="radio" name="recommend" value="Maybe" /> Maybe </label>
+          <label for="not-sure"><input id="not-sure" type="radio" name="recommend" value="Not Sure" /> Not Sure</label>
+      </fieldset>
+
+      <!-- FS(Feature, Improved) -->
+      <fieldset>
+
+        <!--Favourite Feature -->
+        <p id="f-feature-p">What is your favorite feature of freeCodeCamp?</p>
+        <select id="feature" name="feature">
+          <option value=" " disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="community">Community</option>
+          <option value="projects">Projects</option>
+          <option value="open-source">Open Source</option>
+        </select>
+
+        <!-- Like to Improve -->
+        <p id="improve-para">What would you like to see improved? (Check all that apply)</p>
+        <label for="front-end-project" name="front-end-projects"><input type="checkbox" value="Front-end-projects" /> Front-End Projects</label>
+        <label for="back-end-project" name="back-end-project"><input type="checkbox" value="Back-end-projects" /> Back-End Projects</label>
+
+        <label for="data-visualization" name="data-visualiztion"><input type="checkbox" value="Data-visualization" /> Data Visualization
+        </label>
+        <label for="challenges" name="challenges"><input type="checkbox" value="Challenges" /> Challenges</label>
+        <label for="open-source-community" name="open-source-community"><input type="checkbox" value="Open-source-community" /> Open Source Community
+        </label>
+        <label for="gitter-help-rooms" name="gitter-help-rooms"><input type="checkbox" value="Gitter-help-rooms" /> Gitter help rooms
+        </label>
+        <label for="videos" name="videos"><input type="checkbox" value="Videos" /> Videos</label>
+        <label for="city-meetups" name="city-meetups"><input type="checkbox" value="City-meetups" /> City Meetups</label>
+        <label for="wiki" name="wiki"><input type="checkbox" value="Wiki" /> Wiki</label>
+        <label for="forum" name="forum"><input type="checkbox" value="Forum" /> Forum</label>
+        <label for="additional-courses" name="additonal-courses"><input type="checkbox" value="Additional-courses" /> Additional Courses</label>
+      </fieldset>
+
+      <!-- FS(Suggestion) -->
+      <fieldset>
+        <label id="suggestion-label" for="suggestion">Any comments or suggestions?
+          <textarea id="suggestion" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <!-- Submit Button-->
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+
+    </form>
+
+  </div>
+
+  <body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
